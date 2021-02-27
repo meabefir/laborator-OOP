@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1614269800 source:c:\users\strutul\desktop\codeblocks\fac\poo\tema1-1\main.cpp
+	<iostream>
+	<cmath>
+	<algorithm>
+

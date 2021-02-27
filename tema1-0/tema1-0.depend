@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1614250283 source:c:\users\strutul\desktop\codeblocks\fac\poo\tema1-0\main.cpp
+	<iostream>
+	<NrComplex.h>
+
+1614250299 c:\users\strutul\desktop\codeblocks\fac\poo\tema1-0\include\nrcomplex.h
+	<iostream>
+
+1614248573 source:c:\users\strutul\desktop\codeblocks\fac\poo\tema1-0\src\nrcomplex.cpp
+	"NrComplex.h"
+	<iostream>
+	<cmath>
+
