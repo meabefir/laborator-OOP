@@ -13,5 +13,10 @@ int main()
 
    cout << c2 << '\n';
 
+   NrComplex c3;
+   c3 = c1 + c2;
+
+   cout << c3 << '\n';
+
     return 0;
 }

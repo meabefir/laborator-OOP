@@ -23,7 +23,6 @@ NrComplex::NrComplex(NrComplex &c){
 
 NrComplex::~NrComplex()
 {
-    cout << "destroyed" << '\n';
 }
 
 void NrComplex::set(double _re, double _im){

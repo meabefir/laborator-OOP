@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1614506636 source:c:\users\strutul\desktop\codeblocks\fac\poo\tema1-8\main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+
