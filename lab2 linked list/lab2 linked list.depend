@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1614629876 source:c:\users\strutul\desktop\codeblocks\fac\poo\lab2 linked list\main.cpp
+	<iostream>
+	"List.h"
+
+1614629868 source:c:\users\strutul\desktop\codeblocks\fac\poo\lab2 linked list\src\list.cpp
+	"List.h"
+	<iostream>
+
+1614629468 c:\users\strutul\desktop\codeblocks\fac\poo\lab2 linked list\include\list.h
+	<iostream>
+

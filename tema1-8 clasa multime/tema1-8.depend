@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1614622406 source:c:\users\strutul\desktop\codeblocks\fac\poo\tema1-8\main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+
+1615556576 source:c:\users\strutul\desktop\codeblocks\fac\poo\tema1-8 clasa multime\main.cpp
+	<iostream>
+	<vector>
+	<unordered_map>
+
