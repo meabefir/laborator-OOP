@@ -28,7 +28,7 @@ public:
     void remove(int); // sterge valoarea int din multime
 
     // input, output
-    friend ostream& operator << (ostream &, Multime&); // afiseaza multimea
+    friend ostream& operator << (ostream &,const Multime&); // afiseaza multimea
     friend istream& operator >> (istream &, Multime&); // citeste multime (nr de elemente + elemente)
 
     // operator overloading
@@ -85,10 +85,19 @@ void Multime::insert(int x){
 }
 
 void Multime::remove(int x){
+    if (this->_size == 0){
+        // multimea este goala
+        return;
+    }
     int poz = 0;
     for (poz = 0; poz < this->_size; poz++)
         if (this->data[poz] == x)
             break;
+    if (poz == this->_size){
+        return;
+    }
+    this->data[poz] = this->data[--this->_size];
+    /*
     if (poz == this->_size)
         return;
     if (poz == this->_size-1){
@@ -98,6 +107,7 @@ void Multime::remove(int x){
     for (int i = poz; i < this->_size-1; i++)
         this->data[i] = this->data[i+1];
     this->_size --;
+    */
 }
 
 void Multime::set_data(vector<int> &v){
@@ -121,7 +131,7 @@ void Multime::set_data(vector<int> &v){
     this->_size = k;
 }
 
-ostream& operator << (ostream &os, Multime &m){
+ostream& operator << (ostream &os,const Multime &m){
     if (m._size == 0){
         cout << " Multimea este vida!\n";
         return os;
@@ -224,7 +234,7 @@ int main()
     Multime m3(vector<int>{7,8,9,9,10,11,12});
     Multime m4 = m1 + m3 * m2;
 
-    cout << m1;
+    //cout << m1+m2;
 
     return 0;
 }
@@ -340,6 +350,7 @@ void play(){
                 cout << " Index invalid!\n\n";
                 break;
             } else {
+                cout << " Alege optiune: \n";
                 cout << "\n\n1 - reuniune\n2 - intersectie\n3 - diferenta\n";
                 int tip_operatie;
                 cin >> tip_operatie;
